@@ -205,7 +205,7 @@ var SpaceApp = /*#__PURE__*/function (_CindyApp) {
                   virtualheight: 750,
                   virtualwidth: 1000,
                   transform: [{
-                    visibleRect: [0.2, SIZE + 1, SIZE + 2.2, 0]
+                    visibleRect: [0.2, SIZE + 1.3, SIZE + 2.6, -0.3]
                   }]
                 }];
                 _context.t3 = {
