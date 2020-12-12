@@ -1,0 +1,39 @@
+.modal-content {
+  box-shadow: 0 0 30px -6px rgba(0, 0, 0, 1);
+  border: none;
+  border-radius: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.2;
+}
+
+.modal-body {
+  padding: 2rem 5rem;
+  color: $color-white;
+  background-color: $color-blue;
+  @include ubuntu;
+
+  b, strong {
+    @include ubuntuBold;
+  }
+
+  a {
+    color: $color-cyan;
+  }
+
+  h2 {
+    color: $color-yellow;
+  }
+
+  button.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $color-white;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,4 +1,7 @@
 extends tpl/page
 
 block main
-  include sections/main
+  div.game-container(data-component='game')
+  a.logo-imaginary(href="http://about.imaginary.org", title="About IMAGINARY")
+  a.icon-info(href="#", title="About", data-toggle="modal", data-target="#moreinfo")
+  include include/info

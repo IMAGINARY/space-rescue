@@ -1,6 +1,7 @@
 # Space Rescue
 
 Game developed by Aaron Montag. Inspired on the game by Hiroshi Yamamoto.
+Additional code by Christian Stussak and Eric Londaits. 
 
 ## License
 

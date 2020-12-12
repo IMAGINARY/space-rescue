@@ -1,0 +1,30 @@
+.logo-imaginary {
+   display: block;
+   width: 150px;
+   height: 30px;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   z-index: 100;
+   background-image: url('../img/imaginary-logo-white.png');
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
+ }
+
+.icon-info {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  background-image: url('../img/question-circle-solid.svg');
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(43, 48, 68, 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 5px rgba(43, 48, 68,70%);
+}
