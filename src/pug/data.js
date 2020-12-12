@@ -32,7 +32,7 @@ function url(aPath, absolute = false) {
 }
 
 function asset(filepath) {
-  const revManifest = JSON.parse(fs.readFileSync('./pug/rev-manifest.json', 'utf8'));
+  const revManifest = JSON.parse(fs.readFileSync('./src/pug/rev-manifest.json', 'utf8'));
   const parts = path.parse(filepath);
   return url(`${parts.base in revManifest ? path.join(parts.dir, revManifest[parts.base]) : filepath}`);
 }

@@ -11,32 +11,32 @@ const rename = require('gulp-rename');
 const touch = require('gulp-touch-fd');
 const rev = require('gulp-rev');
 const del = require('del');
-const pugHelper = require('./helpers/pug-helper');
-const pugData = require('./pug/data.js');
+const pugHelper = require('./src/helpers/pug-helper');
+const pugData = require('./src/pug/data.js');
 
-const OUTPUT_DIR = '..';
-const REV_MANIFEST = './pug/rev-manifest.json';
+const OUTPUT_DIR = '.';
+const REV_MANIFEST = './src/pug/rev-manifest.json';
 
 const paths = {
   html: {
-    src: ['./pug/**/*.pug', '!./pug/include/**/*.pug', '!./pug/tpl/**/*.pug', '!./pug/sections/**/*.pug'],
-    watchSrc: ['./pug/**/*.pug', REV_MANIFEST],
+    src: ['./src/pug/**/*.pug', '!./src/pug/include/**/*.pug', '!./src/pug/tpl/**/*.pug', '!./src/pug/sections/**/*.pug'],
+    watchSrc: ['./src/pug/**/*.pug', REV_MANIFEST],
     dest: `${OUTPUT_DIR}`,
   },
   styles: {
-    src: './sass/**/*.scss',
+    src: './src/sass/**/*.scss',
     dest: `${OUTPUT_DIR}/assets/css`,
     clean: [`${OUTPUT_DIR}/assets/css/default-??????????.css`, `${OUTPUT_DIR}/assets/css/default-??????????.css.map`],
   },
   scripts: {
-    src: './js/main.js',
-    watchSrc: ['./js/**/*.js', '!./js/dependencies.js'],
+    src: './src/js/main.js',
+    watchSrc: ['./src/js/**/*.js', '!./src/js/dependencies.js'],
     dest: `${OUTPUT_DIR}/assets/js`,
     filename: 'bundle',
     clean: [`${OUTPUT_DIR}/assets/js/bundle-??????????.min.js`, `${OUTPUT_DIR}/assets/js/bundle-??????????.min.js.map`],
   },
   dependencies: {
-    src: './js/dependencies.js',
+    src: './src/js/dependencies.js',
     dest: `${OUTPUT_DIR}/assets/js`,
     filename: 'dependencies',
     clean: [`${OUTPUT_DIR}/assets/js/dependencies-??????????.min.js`, `${OUTPUT_DIR}/assets/js/dependencies-??????????.min.js.map`],

@@ -6,8 +6,8 @@ Game developed by Aaron Montag. Inspired on the game by Hiroshi Yamamoto.
 
 Images by Eric Londaits <eric.londaits@imaginary.org> for IMAGINARY gGmbH.
 
-Copyright 2019-2020 IMAGINARY gGmbH.
+Copyright 2019 IMAGINARY gGmbH.
 
-Images licensed under a
+Images licensed under a 
 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

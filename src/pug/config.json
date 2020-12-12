@@ -1,6 +1,6 @@
 {
-  "siteName": "My Site Name",
-  "siteDescription": "My Site Description",
-  "siteURL": "",
+  "siteName": "Space Rescue",
+  "siteDescription": "A game of spacewalking puzzles",
+  "siteURL": "http://imaginary.github.io/space-rescue",
   "basePath": ""
 }

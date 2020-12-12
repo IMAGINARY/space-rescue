@@ -1,0 +1,27 @@
+#!/bin/bash
+
+for j in `seq 1 11`
+	do
+	rm pre$j.txt
+done
+
+for i in `seq 1000`
+	do
+	for j in `seq 3 11`
+		do
+			./level-generator 7 $j 5 1000000 >> pre$j.txt
+			echo "generated ${i}th level with difficulty ${j}."
+		done
+done
+
+for j in `seq 1 11`
+	do
+	rm sel$j.txt
+	cat levels/pre*.txt | grep "$j steps" -B 0 -A 8 | grep "-" -v >> sel$j.txt
+done
+
+for j in `seq 1 11`
+	do
+		rm sorted$j.txt
+		node sort-levels.js sel$j.txt >> sorted$j.txt
+done
